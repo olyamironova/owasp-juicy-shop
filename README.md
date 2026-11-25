@@ -151,3 +151,16 @@ npm run report -- reports/latest
 Для просмотра последнего нового локального прогона используйте `npm run report`.
 GitHub показывает исходный HTML, поэтому интерактивный отчёт нужно открывать
 локально указанной командой после клонирования репозитория.
+
+## Отчёт в GitHub Pages
+
+https://olyamironova.github.io/owasp-juicy-shop/
+
+Статический отчёт публикуется из ветки `gh-pages`, которая содержит папку
+`reports/latest` из `main`. После обновления отчёта публикацию можно обновить:
+
+```sh
+git subtree split --prefix reports/latest -b pages-update
+git push origin pages-update:gh-pages
+git branch -D pages-update
+```
