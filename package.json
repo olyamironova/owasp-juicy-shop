@@ -1,0 +1,23 @@
+{
+  "name": "ui-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Учебный проект Playwright Test на JavaScript и Chromium",
+  "scripts": {
+    "test": "playwright test",
+    "test:search": "playwright test tests/search.spec.js",
+    "test:search:ui": "playwright test tests/search.spec.js --ui",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test tests/counter.spec.js --debug",
+    "report": "playwright show-report --host 127.0.0.1",
+    "codegen": "playwright codegen",
+    "browsers:install": "playwright install chromium"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1"
+  }
+}

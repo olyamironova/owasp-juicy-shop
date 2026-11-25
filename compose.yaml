@@ -1,0 +1,6 @@
+name: study-juice-shop
+services:
+  juice-shop:
+    image: bkimminich/juice-shop:v20.4.0
+    ports:
+      - "127.0.0.1:3001:3000"
