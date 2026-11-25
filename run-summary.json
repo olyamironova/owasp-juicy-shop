@@ -1,0 +1,19 @@
+{
+  "startedAt": "2026-11-25T18:55:30.723Z",
+  "durationMs": 66144.56599999999,
+  "passed": 11,
+  "failed": 3,
+  "skipped": 0,
+  "failedTests": [
+    "TC01 Поиск по полному названию",
+    "TC02 Поиск по части названия Apple",
+    "TC04 Поиск по фрагменту слова berr"
+  ],
+  "sourceSha256": {
+    "playwright.config.js": "b92814ad25e78c2b84290f4ab83058ba7db73111c6bddea3a2f82c885879cb81",
+    "package-lock.json": "a4afaf9a6dc23dfe2655730dbc885bb80be5ae01095fee6c8d11b0cf3dff8e8c",
+    "tests/counter.spec.js": "c974e9ee71a17d465d3497f855f3c5d1859eccf348538b60f70192d6dd1f74b2",
+    "tests/helpers/juice-shop.js": "235782fba80b34bca6580fb4287f631cbb7b4c5437c7a8b26ee40fd8fa276b3f",
+    "tests/search.spec.js": "0981ec8de58b209f9c267199cd85562e596dcb859fcf590d330454b95151ef0d"
+  }
+}
