@@ -134,3 +134,20 @@ API `/rest/products/search?q=...` использует другой механи
 - https://playwright.dev/docs/test-assertions
 - https://github.com/juice-shop/juice-shop/blob/v20.4.0/frontend/src/app/search-result/search-result.component.ts
 - https://github.com/juice-shop/juice-shop/blob/v20.4.0/routes/search.ts
+
+## Сохранённый отчёт
+
+Полный HTML-отчёт последнего проверенного прогона находится в `reports/latest/`.
+Он содержит 14 тестов: 11 passed и 3 failed. Исходные названия сценариев сохранены.
+Внутри находятся вложения, скриншоты и трассы для упавших тестов.
+`run-summary.json` содержит итог прогона и SHA-256 проверенных исходников.
+
+После установки зависимостей открыть сохранённый отчёт можно командой:
+
+```sh
+npm run report -- reports/latest
+```
+
+Для просмотра последнего нового локального прогона используйте `npm run report`.
+GitHub показывает исходный HTML, поэтому интерактивный отчёт нужно открывать
+локально указанной командой после клонирования репозитория.

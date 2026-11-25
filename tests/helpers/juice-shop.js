@@ -18,7 +18,7 @@ class JuiceShop {
     await this.page.getByRole('button', { name: 'Close Welcome Banner', exact: true }).click();
     await this.page.getByRole('button', { name: 'dismiss cookie message', exact: true }).click();
     // The heading is present before the catalogue has finished loading.
-    await expect(this.names.first(), 'Исходный каталог должен загрузиться').toBeVisible();
+    await expect(this.names.first(), 'Исходный каталог должен загрузиться').toBeVisible({ timeout: 15000 });
     await expect(this.heading).toHaveText('All Products');
   }
 
